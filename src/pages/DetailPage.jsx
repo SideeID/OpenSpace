@@ -12,8 +12,8 @@ function DetailPage() {
   const {
     talkDetail = null,
     authUser,
-  } = useSelector((states) => states);
-  const dispatch = useDispatch();
+  } = useSelector((states) => states); // @TODO: get talkDetail and authUser state from store
+  const dispatch = useDispatch(); // @TODO: get dispatch function from store
 
   useEffect(() => {
     // @TODO: dispatch async action to get talk detail by id
